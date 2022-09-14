@@ -6,7 +6,7 @@ RUN apk --no-cache upgrade
 RUN apk add --no-cache git cmake msttcorefonts-installer python3 alpine-sdk ffmpeg wget rpm2cpio \
     zlib-dev libpng-dev libjpeg-turbo-dev freetype-dev fontconfig-dev \
     libtool libwebp-dev libxml2-dev freetype fontconfig \
-		vips vips-dev grep libc6-compat nodejs-current nodejs-current-dev npm ssh
+		vips vips-dev grep libc6-compat nodejs-current nodejs-current-dev npm openssh
 
 # install pnpm
 RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
